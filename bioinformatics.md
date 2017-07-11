@@ -24,3 +24,13 @@ The final command looks like this:
 ```
 findMotifsGenome.pl peaks.bed out_dir hg19 -bg background.bed -rna -len 4,5,6,7 -mset vertebrates -mis 1 -p 4
 ```
+
+## Create sequence reference dictionary
+
+Using Picard tools
+
+```
+picard CreateSequenceDictionary\
+R = .fasta\
+O = .dict\
+```
