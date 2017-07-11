@@ -45,3 +45,10 @@ Turn them off for everything (not recommended):
 import warnings
 warnings.filterwarnings("ignore")
 ```
+
+## When you get "IOPub Data Rate Exceeded"
+
+Need to start the notebook with this
+```
+jupyter notebook --NotebookApp.iopub_data_rate_limit=1000000000
+```
